@@ -12,7 +12,7 @@ body{
       border: 8px solid white;  
       box-shadow: 1px 1px 4px black;
     }
-    figure.foto-legenda{
+    figure.foto-legenda img{
         width: 100%;
         height: 100%;
     }
@@ -28,7 +28,7 @@ body{
         box-sizing: border-box;
         transition: opacity 1s;
     }
-    figure.foto-legenda:hover{
+    figure.foto-legenda:hover figcaption{
         opacity: 1;
 
     }
