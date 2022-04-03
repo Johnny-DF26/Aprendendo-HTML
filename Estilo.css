@@ -1,11 +1,17 @@
-*
+
+@charset 'utf8';
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+    font-family:'fontelogo';
+    src: url("_fonts/bubblegum-sans-regular.otf");
+}
 body{
-    background-color: #dddddd;
+    background-color: #888888;
     color: rgba(0,0,0,1)
 }
 div#interface{
     width: 1100px;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     margin: -20px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     padding: 10px;
@@ -18,12 +24,30 @@ div#interface{
     header#cabecalho img#icone{
         position: absolute;
         left: 1080px;
-        top: 50px;
+        top: 70px;
     }
     header#cabecalho{
+        border-bottom: 1px #606060 solid; /* linha cabecalho*/
+        height: 150px;
+        background: url("_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
 
     }
-
+    header#cabecalho h1{
+        font-family:'fontelogo', sans-serif;
+        font-size: 30pt;
+        color: #606050;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    header#cabecalho h2{
+        font-family: 'Titillium Web', sans-serif;
+        color: #888888;
+        font-size: 15pt;
+        padding: 0px;
+        margin-top: 0px;
+    }
+    
     /* Formatação de imagens com legendas*/
 
     figure.foto-legenda{
@@ -52,6 +76,7 @@ div#interface{
     }
 
     /* Formatação Menu*/
+
     nav#Menu{
         display: block;
     }
@@ -61,7 +86,6 @@ div#interface{
         position: absolute;
         top: -20px;
         left: 600px;
-
     }
     nav#Menu li{
         display: inline-block;
@@ -73,7 +97,6 @@ div#interface{
     nav#Menu li:hover{
         background-color: rgb(167, 158, 158) ;
     }
-
     nav#Menu h1{
         display: none;
     }
@@ -82,6 +105,38 @@ div#interface{
         text-decoration: none;
     }
     nav#Menu a:hover{    
-        color: white;
+        color: #ffffff;
         text-decoration: underline;
+    }
+    section#corpo{
+        display: block;
+        width: 600px;
+        float: left;
+        border-right: 1px solid #606060;
+        padding-right: 15px;
+    }
+    table#tabelaspec{
+        border: 1px solid #606060;
+        border-spacing: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table#tabelaspec td{
+        border:  1px solid #606060;
+        padding: 10px;
+        text-align: center;
+        
+    }
+    aside#lateral{
+        display: block;
+        width: 450px;
+        float: right;
+        padding-right: 15px;
+    }
+    footer#rodape{
+        clear: both;
+        border-top: 1px solid #606060;
+    }
+    footer#rodape p{
+        text-align: center;
     }
