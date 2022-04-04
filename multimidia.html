@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PrimeiroHTML</title>
-    <link rel="stylesheet" href="Estilo.css">
-    
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/media.css">
+
 </head>
 <script lang="javascript" src="_javascript/funcoes.js"></script>
+
 <body>
     <div id="interface">
         <header id="cabecalho">
@@ -17,39 +19,60 @@
                 <h1>Google Glass</h1>
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
-           
+
             <img id="icone" src="_imagens/glass-oculos-preto-peq.png" alt="">
-        
-            <nav id="Menu" >
-            <h1>Menu Principal</h1>
-            <ul type="disc">
-                <li onmouseover= "mudaFoto('_imagens/home.png')"  onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="PrimeiroHTML.html"> Home</a> </li>
-                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html"> Especificações</a></li>
-                <li onmouseover= "mudaFoto('_imagens/fotos.png')"  onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html"> Fotos</a></li>
-                <li onmouseover= "mudaFoto('_imagens/multimidia.png')"  onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html"> Multimídia</a></li>
-                <li onmouseover= "mudaFoto('_imagens/contato.png')"  onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html"> Fale conosco</a></li>
-            </ul>
+
+            <nav id="Menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a
+                            href="PrimeiroHTML.html"> Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html"> Especificações</a></li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a
+                            href="fotos.html"> Fotos</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html"> Multimídia</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')">
+                        <a href="fale-conosco.html"> Fale conosco</a>
+                    </li>
+                </ul>
             </nav>
         </header>
 
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Glass >Multimídia Fotos</h3>
+                        <h1>Sons e Vídeos</h1>
+                        <h2>por Johnny</h2>
+                        <h3 class="direita">Atualizad   o em 04/Maio/2022</h3>
+                    </hgroup>
+                </header>
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+                <div id="tv-radio">
+                <h1>Áudio e Vídeo</h1>
 
+                <audio id="musica" controls>
+                    <source src="_media/tribodaperiferia-valores.mp3" type="audio/mpeg"/>
+                </audio>
+                    
+                
+                <video id="filme" controls>
+                    <source src="" type="audio/mpeg"/>
+                </video>
+                
+            </div>
+            </article>
+        </section>
 
-Áudio e Vídeo
-
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
-
-<footer id="rodape">
-    <p>Copyright 2022&copy; - by Johnny<br/>
-    <a href="http:/Facebook.com" target="blank">Facebook </a>|
-    <a href="http:/Twitter.com"  target="blank">Twitter</a></p>
-</footer>
-</div>
+        <footer id="rodape">
+            <p>Copyright 2022&copy; - by Johnny<br />
+                <a href="http:/Facebook.com" target="blank">Facebook </a>|
+                <a href="http:/Twitter.com" target="blank">Twitter</a></p>
+        </footer>
+    </div>
 </body>
 
 </html>
